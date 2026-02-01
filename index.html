@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Edexcel IGCSE Human Biology – Complete Exam Notes (One-Page)</title>
+<style>
+  :root{
+    --bg:#f7f9fb; --card:#ffffff; --ink:#101418; --muted:#5a6b7a;
+    --brand:#0b3c5d; --brand2:#0f6aa6; --line:#d9e2ea;
+    --warn:#fff3cd; --warnLine:#ffc107; --good:#e9f7ef; --goodLine:#2ecc71;
+    --bad:#fdecea; --badLine:#e74c3c;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55;background:var(--bg);color:var(--ink)}
+  header{background:linear-gradient(135deg,var(--brand),#06263a);color:#fff;padding:18px 14px}
+  header h1{margin:0 0 6px;font-size:1.15rem}
+  header .sub{font-size:.9rem;opacity:.9}
+  main{max-width:980px;margin:0 auto;padding:12px}
+  .topnote{background:#e8f1f8;border-left:4px solid var(--brand);padding:10px 12px;border-radius:8px;margin:10px 0}
+  .bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+  .bar input{flex:1;min-width:220px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;font-size:1rem}
+  .bar button{padding:10px 12px;border:1px solid var(--line);background:#fff;border-radius:10px;cursor:pointer}
+  .bar button:hover{border-color:var(--brand2);color:var(--brand2)}
+  nav#toc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;margin:12px 0}
+  nav#toc h2{margin:0 0 8px;font-size:1.05rem;color:var(--brand)}
+  .tocgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:6px}
+  .tocgrid a{display:block;padding:8px 10px;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--brand)}
+  .tocgrid a:hover{border-color:var(--brand2);color:var(--brand2)}
+  details.chapter{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:10px 0;overflow:hidden}
+  details.chapter summary{cursor:pointer;padding:12px 14px;font-weight:700;background:#eef4f8}
+  details.chapter[open] summary{background:#e6f2fb}
+  .content{padding:12px 14px}
+  h3{margin:14px 0 6px;color:var(--brand);font-size:1.02rem}
+  h4{margin:10px 0 6px;color:var(--brand2);font-size:0.98rem}
+  ul{margin:6px 0 10px 18px}
+  li{margin:4px 0}
+  .callout{border-left:4px solid var(--warnLine);background:var(--warn);padding:10px 12px;border-radius:10px;margin:8px 0}
+  .good{border-left:4px solid var(--goodLine);background:var(--good);padding:10px 12px;border-radius:10px;margin:8px 0}
+  .bad{border-left:4px solid var(--badLine);background:var(--bad);padding:10px 12px;border-radius:10px;margin:8px 0}
+  .mini{color:var(--muted);font-size:.92rem}
+  .hr{height:1px;background:var(--line);margin:10px 0}
+  table{width:100%;border-collapse:collapse;margin:8px 0}
+  th,td{border:1px solid var(--line);padding:8px;vertical-align:top}
+  th{background:#f0f6fb;text-align:left}
+  .back{display:inline-block;margin:10px 0 4px;text-decoration:none;color:var(--brand)}
+  .back:hover{color:var(--brand2)}
+  code.k{background:#f2f4f7;padding:1px 6px;border-radius:8px}
+  .tag{display:inline-block;font-size:.8rem;padding:2px 8px;border:1px solid var(--line);border-radius:999px;color:var(--muted);margin-left:8px;background:#fff}
+</style>
+</head>
+
+<body>
+<header id="top">
+  <h1>Edexcel IGCSE Human Biology – COMPLETE Exam Notes (One-Page)</h1>
+  <div class="sub">Mobile-friendly • TOC jump + auto-open • Search filter • Expand/Collapse all • Examiner-style keywords</div>
+</header>
+
+<main>
+  <div class="topnote">
+    <strong>If you want perfect alignment, tell me your spec code (e.g., 4HB1).</strong><br/>
+    <span class="mini">Assumptions: using common Edexcel International GCSE Human Biology topic order (12 chapters listed by you).</span>
+  </div>
+<div class="bar">
+    <input id="search" type="text" placeholder="Search (e.g. alveoli, nephron, insulin, villi, Punnett)"/>
+    <button type="button" onclick="expandAll()">Expand all</button>
+    <button type="button" onclick="collapseAll()">Collapse all</button>
+    <button type="button" onclick="clearSearch()">Clear</button>
+  </div>
+
+  <nav id="toc" aria-label="Table of contents">
+    <h2>Table of Contents</h2>
+    <div class="tocgrid">
+      <a href="#ch1" onclick="openFromTOC(event,'ch1')">1. Cells & Tissues</a>
+      <a href="#ch2" onclick="openFromTOC(event,'ch2')">2. Biological Molecules</a>
+      <a href="#ch3" onclick="openFromTOC(event,'ch3')">3. Movement of Substances</a>
+      <a href="#ch4" onclick="openFromTOC(event,'ch4')">4. Nutrition & Energy</a>
+      <a href="#ch5" onclick="openFromTOC(event,'ch5')">5. Respiration</a>
+      <a href="#ch6" onclick="openFromTOC(event,'ch6')">6. Gas Exchange</a>
+      <a href="#ch7" onclick="openFromTOC(event,'ch7')">7. Internal Transport</a>
+      <a href="#ch8" onclick="openFromTOC(event,'ch8')">8. Bones, Muscles & Joints</a>
+      <a href="#ch9" onclick="openFromTOC(event,'ch9')">9. Coordination</a>
+      <a href="#ch10" onclick="openFromTOC(event,'ch10')">10. Homeostasis & Excretion</a>
+      <a href="#ch11" onclick="openFromTOC(event,'ch11')">11. Reproduction & Heredity</a>
+      <a href="#ch12" onclick="openFromTOC(event,'ch12')">12. Human Influence on the Environment</a>
+    </div>
+  </nav>
+
+  <!-- Helper: reusable exam technique block text -->
+  <template id="exam-tech-template">
+    <div class="callout">
+      <strong>3-mark template</strong>: 3 linked points (cause → mechanism → outcome). Use connectives: <code class="k">therefore</code>, <code class="k">so</code>, <code class="k">as a result</code>.<br/>
+      <strong>Checklist</strong>: correct keywords • clear chain • no waffle.
+    </div>
+    <div class="callout">
+      <strong>4-mark template</strong>: 2 mechanisms + 2 links to function/data. Or 4 clear marking points.<br/>
+      <strong>Checklist</strong>: define if needed • name structures • link to effect.
+    </div>
+    <div class="callout">
+      <strong>6-mark template</strong>: 6+ marking points in a logical chain with a short conclusion.<br/>
+      <strong>Checklist</strong>: start broad → add detail • use correct terms • link every point to the question • finish with a conclusion.
+    </div>
+  </template>
+
+  <!-- ========================= -->
+  <!-- CHAPTER 1: CELLS & TISSUES -->
+  <!-- ========================= -->
+  <details class="chapter" id="ch1">
+    <summary>1) Cells and Tissues: Structure and function <span class="tag">foundation</span></summary>
+    <div class="content">
+      <h3>A) Key Points (Must Memorise)</h3>
+      <ul>
+        <li>Organisation: <strong>cells → tissues → organs → organ systems → organism</strong>.</li>
+        <li>Eukaryotic cell structures: nucleus, cytoplasm, cell membrane, mitochondria, ribosomes.</li>
+        <li>Specialised cells have adaptations that match function (structure–function link).</li>
+        <li>Surface area : volume ratio affects diffusion rate (small cells exchange faster).</li>
+      </ul>
+
+      <h3>B) Definitions (exam wording)</h3>
+      <ul>
+        <li><strong>Cell</strong>: smallest structural and functional unit of an organism.</li>
+        <li><strong>Tissue</strong>: group of similar cells working together to carry out a function.</li>
+        <li><strong>Organ</strong>: structure made of different tissues working together.</li>
+        <li><strong>Specialised cell</strong>: cell adapted to carry out a specific function.</li>
+      </ul>
+
+      <h3>C) Core Understanding</h3>
+      <ul>
+        <li><strong>Nucleus</strong> contains genetic material and controls cell activities.</li>
+        <li><strong>Mitochondria</strong> are the site of aerobic respiration (release energy).</li>
+        <li><strong>Ribosomes</strong> are the site of protein synthesis.</li>
+        <li><strong>Cell membrane</strong> controls movement of substances into and out of the cell.</li>
+      </ul>
+<h3>D) Organ Structures & Functions (where relevant)</h3>
+      <h4>Common specialised cells (adaptations → function)</h4>
+      <ul>
+        <li><strong>Red blood cell</strong>: biconcave shape (large SA), no nucleus (more haemoglobin), flexible → transports oxygen efficiently.</li>
+        <li><strong>Neurone</strong>: long axon, dendrites, myelin sheath → rapid transmission of impulses.</li>
+        <li><strong>Ciliated epithelial cell</strong>: cilia beat to move mucus → clears airways.</li>
+        <li><strong>Sperm cell</strong>: tail, many mitochondria, acrosome → fertilisation.</li>
+      </ul>
+
+      <h3>E) Practical / Skills</h3>
+      <ul>
+        <li><strong>Microscope</strong>: calculate magnification: <code class="k">magnification = image size ÷ real size</code>.</li>
+        <li>Drawing cells: clear lines, labels, no shading; include scale where required.</li>
+      </ul>
+
+      <h3>F) Common Mistakes & Examiner Traps</h3>
+      <ul>
+        <li>❌ “Mitochondria make energy” → ✔ “mitochondria are the site of aerobic respiration which releases energy”.</li>
+        <li>❌ “Osmosis is diffusion of salt” → ✔ “osmosis is diffusion of water through a partially permeable membrane”.</li>
+      </ul>
+
+      <h3>G) Exam Questions Bank</h3>
+      <ul>
+        <li><strong>1–2 marks</strong>: Define tissue / organ; name two cell structures and functions.</li>
+        <li><strong>3 marks</strong>: Explain why cells are small (link SA:V to diffusion).</li>
+        <li><strong>4 marks</strong>: Explain how red blood cells are adapted to transport oxygen.</li>
+        <li><strong>6 marks</strong>: Explain how a neurone is adapted to transmit impulses quickly.</li>
+      </ul>
+
+      <h3>H) How to Answer in the Exam (STRUCTURE)</h3>
+      <div id="ch1-tech"></div>
+
+      <h4>Worked 6-mark example</h4>
+      <p><strong>Question:</strong> Explain how red blood cells are adapted for oxygen transport. (6)</p>
+      <div class="good">
+        <strong>Full-marks answer:</strong>
+        <ol>
+          <li>Red blood cells have a <strong>biconcave</strong> shape which increases <strong>surface area</strong> for diffusion of oxygen.</li>
+          <li>They contain <strong>haemoglobin</strong> which binds oxygen to form <strong>oxyhaemoglobin</strong>.</li>
+          <li>They have <strong>no nucleus</strong>, giving more space for haemoglobin.</li>
+          <li>Their membrane is <strong>flexible</strong> so they can squeeze through capillaries.</li>
+          <li>This maintains a short diffusion pathway and allows rapid delivery of oxygen.</li>
+          <li><strong>Therefore</strong> they transport oxygen efficiently from lungs to tissues.</li>
+        </ol>
+      </div>
+      <div class="callout">
+        <strong>Mark-by-mark:</strong> biconcave/SA (1) + diffusion link (1) + haemoglobin (1) + oxyhaemoglobin (1) + no nucleus/space (1) + flexible/capillaries or conclusion (1).
+      </div>
+      <div class="bad">
+        <strong>Weak answer:</strong> “Red blood cells carry oxygen because they have haemoglobin and are round.”<br/>
+        <strong>Why it loses marks:</strong> missing adaptations + no links to diffusion/SA:V/capillaries.<br/>
+        <strong>Upgrade:</strong> add biconcave shape + no nucleus + flexibility + link each to faster transport.
+      </div>
+
+      <a class="back" href="#top">Back to top</a>
+    </div>
+  </details>
+
+  <!-- ========================= -->
+  <!-- CHAPTER 2: BIOLOGICAL MOLECULES -->
+  <!-- ========================= -->
+  <details class="chapter" id="ch2">
+    <summary>2) Biological Molecules: Understanding chemical components <span class="tag">biochemistry</span></summary>
+    <div class="content">
+      <h3>A) Key Points</h3>
+      <ul>
+        <li>Carbohydrates, lipids, proteins, water, vitamins, minerals are required for health.</li>
+        <li>Enzymes are <strong>biological catalysts</strong> with <strong>specific</strong> active sites.</li>
+        <li>Enzyme activity depends on temperature and pH; extreme conditions denature enzymes.</li>
+      </ul>
+<h3>B) Definitions</h3>
+      <ul>
+        <li><strong>Enzyme</strong>: protein that speeds up a reaction without being used up.</li>
+        <li><strong>Active site</strong>: region of enzyme where substrate binds.</li>
+        <li><strong>Denature</strong>: enzyme changes shape so active site no longer fits substrate.</li>
+      </ul>
+
+      <h3>C) Core Understanding</h3>
+      <ul>
+        <li><strong>Carbohydrates</strong> (e.g., starch) → energy; broken down to glucose.</li>
+        <li><strong>Lipids</strong> (fats/oils) → energy store, insulation, cell membranes.</li>
+        <li><strong>Proteins</strong> → growth and repair; enzymes; made of amino acids.</li>
+      </ul>
+
+      <h3>D) Structures & Functions (where relevant)</h3>
+      <h4>Enzyme factors (what to write)</h4>
+      <ul>
+        <li>Higher temperature increases kinetic energy → more collisions → rate increases (up to optimum).</li>
+        <li>Above optimum: bonds break → enzyme <strong>denatures</strong> → active site changes shape → rate decreases.</li>
+        <li>pH change alters ionic bonds → active site changes shape → rate decreases.</li>
+      </ul>
+
+      <h3>E) Practical / Skills</h3>
+      <ul>
+        <li>Investigate enzyme rate (e.g., amylase) by changing <strong>temperature</strong> or <strong>pH</strong>.</li>
+        <li><strong>Control variables</strong>: enzyme concentration, substrate concentration, volume, mixing, time intervals.</li>
+        <li><strong>Graph</strong>: rate vs temperature (optimum curve); identify optimum and denaturation region.</li>
+      </ul>
+
+      <h3>F) Common Mistakes</h3>
+      <ul>
+        <li>❌ “Enzymes die” → ✔ “enzymes denature; active site changes shape”.</li>
+        <li>❌ “pH speeds up all enzymes” → ✔ “each enzyme has an optimum pH”.</li>
+      </ul>
+
+      <h3>G) Exam Questions Bank</h3>
+      <ul>
+        <li><strong>1–2</strong>: Define enzyme/denature; state one function of proteins.</li>
+        <li><strong>3</strong>: Describe effect of temperature on enzyme activity.</li>
+        <li><strong>4</strong>: Explain why rate falls after optimum temperature.</li>
+        <li><strong>6</strong>: Evaluate an enzyme experiment and suggest improvements (controls, repeats, accuracy).</li>
+      </ul>
+
+      <h3>H) How to Answer in the Exam (STRUCTURE)</h3>
+      <div id="ch2-tech"></div>
+
+      <h4>Worked 6-mark example</h4>
+      <p><strong>Question:</strong> Explain how temperature affects enzyme activity. (6)</p>
+      <div class="good">
+        <ol>
+          <li>As temperature increases, molecules gain <strong>kinetic energy</strong>.</li>
+          <li>This increases the frequency of <strong>successful collisions</strong> between enzyme and substrate.</li>
+          <li>So the reaction rate increases up to an <strong>optimum temperature</strong>.</li>
+          <li>Above the optimum, heat breaks <strong>bonds</strong> in the enzyme.</li>
+          <li>The enzyme <strong>denatures</strong> so the <strong>active site</strong> changes shape.</li>
+          <li>Substrate no longer fits → fewer enzyme-substrate complexes → rate decreases.</li>
+        </ol>
+      </div>
+      <div class="bad">
+        <strong>Weak answer:</strong> “Hotter = faster until it stops working.”<br/>
+        <strong>Upgrade:</strong> add kinetic energy, collisions, optimum, denature, active site shape.
+      </div>
+
+      <a class="back" href="#top">Back to top</a>
+    </div>
+  </details>
+
+  <!-- ========================= -->
+  <!-- CHAPTER 3: MOVEMENT OF SUBSTANCES -->
+  <!-- ========================= -->
+  <details class="chapter" id="ch3">
+    <summary>3) Movement of Substances: In and out of cells <span class="tag">transport</span></summary>
+    <div class="content">
+      <h3>A) Key Points</h3>
+      <ul>
+        <li><strong>Diffusion</strong>, <strong>osmosis</strong>, and <strong>active transport</strong> are key cell processes.</li>
+<li>Rate depends on concentration gradient, surface area, temperature, diffusion distance.</li>
+        <li>Active transport uses energy (ATP) to move against a concentration gradient.</li>
+      </ul>
+
+      <h3>B) Definitions</h3>
+      <ul>
+        <li><strong>Diffusion</strong>: net movement of particles from higher to lower concentration.</li>
+        <li><strong>Osmosis</strong>: diffusion of water through a partially permeable membrane from dilute to concentrated solution.</li>
+        <li><strong>Active transport</strong>: movement from low to high concentration using energy from respiration.</li>
+      </ul>
+
+      <h3>C) Core Understanding</h3>
+      <ul>
+        <li>Osmosis causes cells to gain/lose water depending on water potential (relative concentration).</li>
+        <li>Active transport is used in <strong>intestine</strong> and <strong>kidney tubules</strong> for reabsorption/uptake.</li>
+      </ul>
+
+      <h3>D) Organ Structures & Functions</h3>
+      <h4>Villi (absorption) – structure-function keywords</h4>
+      <ul>
+        <li>Many villi + microvilli → <strong>large surface area</strong>.</li>
+        <li>Epithelium one cell thick → <strong>short diffusion distance</strong>.</li>
+        <li>Good blood supply → maintains concentration gradient.</li>
+        <li>Lacteal → absorbs fatty acids and glycerol (lipids).</li>
+      </ul>
+
+      <h3>E) Practical / Skills</h3>
+      <ul>
+        <li>Osmosis practical (potato cylinders): measure mass change vs sucrose concentration.</li>
+        <li><strong>Independent</strong>: concentration; <strong>dependent</strong>: % mass change; <strong>controls</strong>: time, temperature, size, blotting.</li>
+        <li>Graph: % change vs concentration; identify isotonic point (~0% change).</li>
+      </ul>
+
+      <h3>F) Common Mistakes</h3>
+      <ul>
+        <li>❌ “Particles move to equalise” (vague) → ✔ “net movement down a concentration gradient”.</li>
+        <li>❌ “Active transport is diffusion” → ✔ “requires energy and carrier proteins”.</li>
+      </ul>
+
+      <h3>G) Exam Questions Bank</h3>
+      <ul>
+        <li><strong>1–2</strong>: Define osmosis; state one factor affecting diffusion.</li>
+        <li><strong>3</strong>: Explain why villi increase absorption.</li>
+        <li><strong>4</strong>: Compare diffusion and active transport (energy + direction of gradient).</li>
+        <li><strong>6</strong>: Interpret an osmosis graph and explain results using correct terms.</li>
+      </ul>
+
+      <h3>H) Exam Technique</h3>
+      <div id="ch3-tech"></div>
+
+      <h4>Worked 6-mark example</h4>
+      <p><strong>Question:</strong> A potato cylinder loses mass in a concentrated sucrose solution. Explain. (6)</p>
+      <div class="good">
+        <ol>
+          <li>The potato cells contain a more <strong>dilute</strong> solution than the sucrose solution outside.</li>
+          <li>Water moves by <strong>osmosis</strong> through the <strong>partially permeable</strong> cell membrane.</li>
+          <li>Water moves from higher to lower <strong>water potential</strong> (from dilute to concentrated).</li>
+          <li>So water leaves the potato cells.</li>
+          <li>The cells become <strong>flaccid</strong> (lose turgor) and the cylinder loses mass.</li>
+          <li>Therefore the net movement of water is out of the potato into the sucrose solution.</li>
+        </ol>
+      </div>
+
+      <a class="back" href="#top">Back to top</a>
+    </div>
+  </details>
+
+  <!-- ========================= -->
+  <!-- CHAPTER 4: NUTRITION & ENERGY -->
+  <!-- ========================= -->
+  <details class="chapter" id="ch4">
+    <summary>4) Nutrition and Energy: Diet and metabolism <span class="tag">digestion</span></summary>
+    <div class="content">
+      <h3>A) Key Points</h3>
+      <ul>
+        <li>Balanced diet supplies: carbohydrates, proteins, lipids, vitamins, minerals, fibre, water.</li>
+        <li>Digestion: large insoluble molecules → small soluble molecules.</li>
+        <li>Enzymes are specific and work best at optimum pH/optimum temperature.</li>
+
+        <li>Absorption occurs mainly in the <strong>small intestine</strong> via villi.</li>
+        <li>Energy balance: intake vs expenditure affects body mass.</li>
+      </ul>
+
+      <h3>B) Definitions</h3>
+      <ul>
+        <li><strong>Balanced diet</strong>: provides all nutrients in correct proportions for health.</li>
+        <li><strong>Digestion</strong>: breakdown of large insoluble molecules into small soluble molecules.</li>
+        <li><strong>Absorption</strong>: movement of digested molecules through intestine wall into blood/lymph.</li>
+        <li><strong>Assimilation</strong>: use of absorbed molecules by cells (e.g. amino acids → proteins).</li>
+        <li><strong>Metabolism</strong>: all chemical reactions in the body (includes respiration, synthesis, breakdown).</li>
+      </ul>
+
+      <h3>C) Core Understanding</h3>
+      <ul>
+        <li><strong>Carbohydrates</strong>: energy source (respiration); stored as glycogen in liver/muscle.</li>
+        <li><strong>Lipids</strong>: long-term energy store; insulation; cell membranes.</li>
+        <li><strong>Proteins</strong>: growth/repair; enzymes/hormones; excess amino acids cannot be stored → deamination → urea.</li>
+        <li><strong>Fibre</strong>: adds bulk; aids peristalsis; reduces constipation risk.</li>
+        <li><strong>Water</strong>: solvent; transport medium; temperature regulation.</li>
+      </ul>
+
+      <h3>D) Organ Structures & Functions</h3>
+      <h4>Digestive system organs (part → function keywords)</h4>
+      <ul>
+        <li><strong>Mouth</strong>: chewing (mechanical digestion); saliva contains <strong>amylase</strong>.</li>
+        <li><strong>Oesophagus</strong>: <strong>peristalsis</strong> moves bolus to stomach.</li>
+        <li><strong>Stomach</strong>: churning; <strong>protease</strong>; <strong>hydrochloric acid</strong> (low pH optimum for protease; kills bacteria).</li>
+        <li><strong>Liver</strong>: produces <strong>bile</strong> (emulsifies fats; neutralises acid); stores glycogen; deaminates amino acids.</li>
+        <li><strong>Gall bladder</strong>: stores/concentrates bile.</li>
+        <li><strong>Pancreas</strong>: produces digestive enzymes; secretes bicarbonate to neutralise acid (where specified).</li>
+        <li><strong>Small intestine</strong>: completes digestion; <strong>absorption</strong> via villi.</li>
+        <li><strong>Large intestine</strong>: absorbs water; forms faeces.</li>
+      </ul>
+
+      <h4>Enzymes (substrate → products)</h4>
+      <table>
+        <tr><th>Enzyme</th><th>Substrate</th><th>Products</th><th>Where works (typical)</th></tr>
+        <tr><td>Amylase</td><td>Starch</td><td>Maltose (then glucose)</td><td>Mouth / small intestine</td></tr>
+        <tr><td>Protease</td><td>Protein</td><td>Amino acids</td><td>Stomach / small intestine</td></tr>
+        <tr><td>Lipase</td><td>Lipids</td><td>Fatty acids + glycerol</td><td>Small intestine</td></tr>
+      </table>
+
+      <div class="callout">
+        <strong>Bile is NOT an enzyme.</strong> It <strong>emulsifies</strong> fats (bigger droplets → smaller droplets) to increase surface area for lipase, and it <strong>neutralises</strong> stomach acid.
+      </div>
+
+      <h3>E) Practical / Skills</h3>
+      <ul>
+        <li>Food tests (starch/ sugars/ protein/ lipid) + interpreting unknowns.</li>
+        <li>Plan digestion experiments (e.g., amylase + starch): control temperature, pH, volumes; repeat and average.</li>
+        <li>Data: interpret digestion rate graphs; calculate % change; evaluate diet/energy labels.</li>
+      </ul>
+
+      <h3>F) Common Mistakes & Examiner Traps</h3>
+      <ul>
+        <li>Wrong: “bile digests fat” → Write: bile <strong>emulsifies</strong> fats; lipase digests fats.</li>
+        <li>Wrong: “absorption happens in stomach” → Write: absorption mainly in <strong>small intestine</strong> (villi).</li>
+        <li>Wrong: “assimilation = absorption” → Write: absorption into blood; assimilation is use by cells.</li>
+      </ul>
+<h3>G) Exam Questions Bank</h3>
+      <ul>
+        <li><strong>1–2</strong>: Name organ producing bile; define assimilation.</li>
+        <li><strong>3</strong>: Describe peristalsis.</li>
+        <li><strong>4</strong>: Explain how bile helps fat digestion.</li>
+        <li><strong>6</strong>: Explain villi adaptations for absorption (SA, thin wall, blood supply, lacteal).</li>
+        <li><strong>Data</strong>: interpret enzyme graphs / label digestion organs / food label calculations.</li>
+      </ul>
+
+      <h3>H) How to Answer in the Exam (STRUCTURE)</h3>
+      <div id="ch4-tech"></div>
+
+      <h4>Worked 6-mark example</h4>
+      <p><strong>Question:</strong> Explain how the small intestine is adapted for absorption of digested food. (6)</p>
+      <div class="good">
+        <ol>
+          <li>The small intestine has many <strong>villi</strong> and microvilli, giving a <strong>large surface area</strong>.</li>
+          <li>The epithelium is <strong>one cell thick</strong>, giving a <strong>short diffusion distance</strong>.</li>
+          <li>Each villus has a <strong>rich capillary network</strong> that carries away glucose and amino acids.</li>
+          <li>This maintains a <strong>concentration gradient</strong> for diffusion into the blood.</li>
+          <li>Villi contain <strong>lacteals</strong> to absorb fatty acids and glycerol into the lymph.</li>
+          <li>Therefore these adaptations increase the <strong>rate of absorption</strong>.</li>
+        </ol>
+      </div>
+
+      <div class="bad">
+        <strong>Weak answer:</strong> “The intestine is long so it absorbs more.”<br/>
+        <strong>Upgrade:</strong> use the villi adaptation list and link each feature to diffusion/transport.
+      </div>
+
+      <a class="back" href="#top">Back to top</a>
+    </div>
+  </details>
+
+  <!-- ========================= -->
+  <!-- CHAPTER 5: RESPIRATION -->
+  <!-- ========================= -->
+  <details class="chapter" id="ch5">
+    <summary>5) Respiration: Energy release in cells <span class="tag">cell energy</span></summary>
+    <div class="content">
+      <h3>A) Key Points</h3>
+      <ul>
+        <li>Respiration is a chemical process that releases energy in cells.</li>
+        <li>Aerobic respiration uses oxygen and releases more energy than anaerobic respiration.</li>
+        <li>Anaerobic respiration in muscles produces lactic acid; causes fatigue; creates oxygen debt.</li>
+      </ul>
+
+      <h3>B) Definitions</h3>
+      <ul>
+        <li><strong>Respiration</strong>: chemical reactions in cells that break down glucose to release energy.</li>
+        <li><strong>Aerobic respiration</strong>: respiration using oxygen.</li>
+        <li><strong>Anaerobic respiration</strong>: respiration without oxygen.</li>
+        <li><strong>Oxygen debt</strong>: extra oxygen needed after exercise to oxidise lactic acid.</li>
+      </ul>
+
+      <h3>C) Core Understanding</h3>
+      <div class="callout">
+        <strong>Word equations (must know):</strong><br/>
+        Aerobic: <strong>glucose + oxygen → carbon dioxide + water (+ energy)</strong><br/>
+        Anaerobic (muscle): <strong>glucose → lactic acid (+ energy)</strong>
+      </div>
+      <ul>
+        <li>Energy is used for: muscle contraction, active transport, synthesis reactions, maintaining body temperature.</li>
+        <li>During intense exercise oxygen supply may be insufficient → anaerobic respiration increases → lactic acid builds up.</li>
+        <li>Oxygen debt is repaid by increased breathing and heart rate after exercise.</li>
+      </ul>
+
+      <h3>D) Structures & Functions</h3>
+      <ul>
+        <li><strong>Mitochondria</strong>: site of aerobic respiration; more mitochondria in active tissues (e.g., muscle).</li>
+      </ul>
+
+      <h3>E) Practical / Skills</h3>
+      <ul>
+        <li>Use pulse/breathing rate data to infer respiration demand during exercise.</li>
+        <li>Graph interpretation: recovery curves; compare rest vs exercise.</li>
+      </ul>
+
+
+<h3>F) Common Mistakes</h3>
+      <ul>
+        <li>Breathing ≠ respiration (breathing is ventilation; respiration is chemical reactions in cells).</li>
+        <li>Missing “energy released” when asked for respiration equation.</li>
+      </ul>
+
+      <h3>G) Exam Questions Bank</h3>
+      <ul>
+        <li><strong>1–2</strong>: State products of aerobic respiration; define oxygen debt.</li>
+        <li><strong>3</strong>: Explain why breathing rate increases during exercise.</li>
+        <li><strong>4</strong>: Compare aerobic and anaerobic respiration.</li>
+        <li><strong>6</strong>: Explain oxygen debt and recovery after vigorous exercise.</li>
+      </ul>
+
+      <h3>H) How to Answer in the Exam (STRUCTURE)</h3>
+      <div id="ch5-tech"></div>
+
+      <h4>Worked 6-mark example</h4>
+      <p><strong>Question:</strong> Explain what is meant by oxygen debt and how it is repaid. (6)</p>
+      <div class="good">
+        <ol>
+          <li>During vigorous exercise, muscles may not get enough oxygen for aerobic respiration.</li>
+          <li>Some energy is released by <strong>anaerobic respiration</strong>.</li>
+          <li>Anaerobic respiration produces <strong>lactic acid</strong> in muscles.</li>
+          <li>Oxygen debt is the <strong>extra oxygen</strong> needed after exercise to <strong>oxidise lactic acid</strong>.</li>
+          <li>Breathing and heart rate remain high to deliver more oxygen and remove carbon dioxide.</li>
+          <li>As lactic acid is broken down, oxygen debt is repaid and rates return to normal.</li>
+        </ol>
+      </div>
+
+      <div class="bad">
+        <strong>Weak answer:</strong> “Oxygen debt is when you need more oxygen after running.”<br/>
+        <strong>Upgrade:</strong> add anaerobic respiration → lactic acid → oxidised using extra oxygen.
+      </div>
+
+      <a class="back" href="#top">Back to top</a>
+    </div>
+  </details>
+
+  <!-- ========================= -->
+  <!-- CHAPTER 6: GAS EXCHANGE -->
+  <!-- ========================= -->
+  <details class="chapter" id="ch6">
+    <summary>6) Gas Exchange: Breathing mechanisms <span class="tag">lungs</span></summary>
+    <div class="content">
+      <h3>A) Key Points</h3>
+      <ul>
+        <li>Gas exchange occurs in the alveoli by diffusion.</li>
+        <li>Efficient exchange requires large surface area, short diffusion distance, steep gradients.</li>
+        <li>Ventilation changes thorax volume and pressure to move air in/out of lungs.</li>
+      </ul>
+
+      <h3>B) Definitions</h3>
+      <ul>
+        <li><strong>Ventilation</strong>: movement of air into and out of lungs.</li>
+        <li><strong>Alveolus</strong>: air sac where gas exchange occurs.</li>
+        <li><strong>Diffusion</strong>: net movement from high to low concentration.</li>
+      </ul>
+
+      <h3>C) Core Understanding</h3>
+      <ul>
+        <li>Oxygen diffuses from alveoli (higher concentration) to blood (lower concentration).</li>
+        <li>Carbon dioxide diffuses from blood (higher concentration) to alveoli (lower concentration).</li>
+        <li>Ventilation and blood flow maintain steep concentration gradients.</li>
+      </ul>
+
+      <h3>D) Organ Structures & Functions (Lungs)</h3>
+      <div class="callout">
+        <strong>Lung structure (label + function):</strong>
+        <ul>
+          <li><strong>Trachea</strong>: cartilage rings keep airway open; cilia + mucus trap and remove dust/pathogens.</li>
+          <li><strong>Bronchi</strong>: carry air into each lung.</li>
+          <li><strong>Bronchioles</strong>: smaller tubes leading to alveoli.</li>
+          <li><strong>Alveoli</strong>: gas exchange surface.</li>
+          <li><strong>Capillaries</strong>: bring deoxygenated blood; carry away oxygenated blood.</li>
+        </ul>
+      </div>
+
+      <div class="good">
+
+peter, [2/1/2026 8:45 PM]
+<strong>Alveoli adaptations (feature → benefit):</strong>
+        <ul>
+          <li>Many alveoli → <strong>large surface area</strong>.</li>
+          <li>Alveolar/capillary walls one cell thick → <strong>short diffusion distance</strong>.</li>
+          <li>Moist lining → gases dissolve before diffusing.</li>
+          <li>Dense capillary network → maintains gradient by removing O₂ and delivering CO₂.</li>
+          <li>Ventilation replaces alveolar air → maintains gradient.</li>
+        </ul>
+      </div>
+
+      <h4>Ventilation basics</h4>
+      <table>
+        <tr><th>Step</th><th>Inhalation</th><th>Exhalation</th></tr>
+        <tr><td>Diaphragm</td><td>Contracts and flattens</td><td>Relaxes and domes</td></tr>
+        <tr><td>Intercostal muscles</td><td>External contract → ribs up/out</td><td>External relax (internal contract in forced exhale)</td></tr>
+        <tr><td>Thorax volume</td><td>Increases</td><td>Decreases</td></tr>
+        <tr><td>Pressure</td><td>Decreases below atmospheric</td><td>Increases above atmospheric</td></tr>
+        <tr><td>Air movement</td><td>Air enters lungs</td><td>Air leaves lungs</td></tr>
+      </table>
+
+      <h3>E) Practical / Skills</h3>
+      <ul>
+        <li>Interpret breathing/pulse data; explain changes during exercise.</li>
+        <li>Health: smoking damages cilia and can damage alveoli; reduces gas exchange efficiency.</li>
+      </ul>
+
+      <h3>F) Common Mistakes</h3>
+      <ul>
+        <li>“Oxygen is pumped into blood” → oxygen <strong>diffuses</strong> down a gradient.</li>
+        <li>Missing pressure change explanation in ventilation questions.</li>
+      </ul>
+
+      <h3>G) Exam Questions Bank</h3>
+      <ul>
+        <li><strong>1–2</strong>: Name gas exchange surface; state two alveoli adaptations.</li>
+        <li><strong>3</strong>: Describe inhalation in terms of muscles, volume, pressure.</li>
+        <li><strong>4</strong>: Explain how blood supply helps maintain diffusion gradients.</li>
+        <li><strong>6</strong>: Explain how smoking reduces gas exchange (cilia, mucus, alveoli damage, gradients).</li>
+      </ul>
+
+      <h3>H) How to Answer in the Exam (STRUCTURE)</h3>
+      <div id="ch6-tech"></div>
+
+      <h4>Worked 6-mark example</h4>
+      <p><strong>Question:</strong> Explain how alveoli are adapted for efficient gas exchange. (6)</p>
+      <div class="good">
+        <ol>
+          <li>There are many alveoli, giving a large surface area for diffusion.</li>
+          <li>Alveolar and capillary walls are one cell thick, giving a short diffusion distance.</li>
+          <li>The surface is moist so gases dissolve before diffusing.</li>
+          <li>A dense capillary network provides a good blood supply.</li>
+          <li>Blood flow removes oxygen and delivers carbon dioxide, maintaining a steep concentration gradient.</li>
+          <li>Ventilation replaces alveolar air, also maintaining the gradient, so diffusion is rapid.</li>
+        </ol>
+      </div>
+
+      <div class="bad">
+        <strong>Weak answer:</strong> “Alveoli are small so gases move fast.”<br/>
+        <strong>Upgrade:</strong> list adaptations with diffusion links (SA, thin wall, blood supply, ventilation).
+      </div>
+
+      <a class="back" href="#top">Back to top</a>
+    </div>
+  </details>
+
+  <!-- ========================= -->
+  <!-- CHAPTER 7: INTERNAL TRANSPORT -->
+  <!-- ========================= -->
+  <details class="chapter" id="ch7">
+    <summary>7) Internal Transport: Circulatory system <span class="tag">heart + blood</span></summary>
+    <div class="content">
+      <h3>A) Key Points</h3>
+      <ul>
+        <li>Humans have <strong>double circulation</strong>: pulmonary + systemic.</li>
+        <li>Heart is a pump; valves prevent backflow.</li>
+        <li>Blood transports oxygen, nutrients, hormones; removes CO₂ and urea; distributes heat.</li>
+      </ul>
+
+
+<h3>B) Definitions</h3>
+      <ul>
+        <li><strong>Double circulation</strong>: blood passes through the heart twice per complete circuit.</li>
+        <li><strong>Artery</strong>: carries blood away from the heart (high pressure).</li>
+        <li><strong>Vein</strong>: carries blood toward the heart; has valves.</li>
+        <li><strong>Capillary</strong>: exchange vessel with one-cell-thick walls.</li>
+      </ul>
+
+      <h3>C) Core Understanding</h3>
+      <ul>
+        <li><strong>Pulmonary circulation</strong>: right ventricle → pulmonary artery → lungs → pulmonary vein → left atrium.</li>
+        <li><strong>Systemic circulation</strong>: left ventricle → aorta → body → vena cava → right atrium.</li>
+        <li>Capillaries allow exchange by diffusion with body cells.</li>
+      </ul>
+
+      <h3>D) Organ Structures & Functions (Heart + Blood)</h3>
+      <div class="callout">
+        <strong>Heart chambers + major vessels:</strong>
+        <ul>
+          <li><strong>Right atrium</strong> receives deoxygenated blood from <strong>vena cava</strong>.</li>
+          <li><strong>Right ventricle</strong> pumps blood to lungs via <strong>pulmonary artery</strong>.</li>
+          <li><strong>Left atrium</strong> receives oxygenated blood from <strong>pulmonary vein</strong>.</li>
+          <li><strong>Left ventricle</strong> pumps blood to body via <strong>aorta</strong> (thick wall for high pressure).</li>
+          <li><strong>Valves</strong> prevent backflow (one-way flow).</li>
+          <li><strong>Coronary arteries</strong> supply heart muscle with oxygen and glucose.</li>
+        </ul>
+      </div>
+
+      <table>
+        <tr><th>Vessel</th><th>Structure</th><th>Function link</th></tr>
+        <tr><td>Artery</td><td>Thick muscular wall; small lumen</td><td>Withstands high pressure; maintains flow</td></tr>
+        <tr><td>Vein</td><td>Thin wall; large lumen; valves</td><td>Returns blood at low pressure; valves prevent backflow</td></tr>
+        <tr><td>Capillary</td><td>One-cell-thick wall; narrow lumen</td><td>Short diffusion distance; exchange with tissues</td></tr>
+      </table>
+
+      <div class="good">
+        <strong>Blood components:</strong>
+        <ul>
+          <li><strong>Plasma</strong>: transports dissolved substances (CO₂, urea, glucose, hormones, amino acids).</li>
+          <li><strong>Red blood cells</strong>: haemoglobin transports oxygen.</li>
+          <li><strong>White blood cells</strong>: defend against pathogens (phagocytosis/antibodies if required).</li>
+          <li><strong>Platelets</strong>: clotting; prevents blood loss; stops entry of pathogens.</li>
+        </ul>
+      </div>
+
+      <h3>E) Practical / Skills</h3>
+      <ul>
+        <li>Measure pulse and recovery after exercise; calculate % increase; interpret graphs.</li>
+        <li>Evaluate risk factors for coronary heart disease (smoking, diet, exercise, obesity).</li>
+      </ul>
+
+      <h3>F) Common Mistakes</h3>
+      <ul>
+        <li>Pulmonary vein carries <strong>oxygenated</strong> blood (common trap).</li>
+        <li>Not stating valves prevent backflow (must include for marks).</li>
+      </ul>
+
+      <h3>G) Exam Questions Bank</h3>
+      <ul>
+        <li><strong>1–2</strong>: Name vessel leaving left ventricle; state function of platelets.</li>
+        <li><strong>3</strong>: Describe pathway of blood from vena cava to aorta.</li>
+        <li><strong>4</strong>: Explain why left ventricle wall is thicker than right ventricle wall.</li>
+        <li><strong>6</strong>: Explain how capillary structure makes exchange efficient.</li>
+      </ul>
+
+      <h3>H) How to Answer in the Exam (STRUCTURE)</h3>
+      <div id="ch7-tech"></div>
+
+      <h4>Worked 6-mark example</h4>
+      <p><strong>Question:</strong> Explain why capillaries are efficient exchange vessels. (6)</p>
+
+<div class="good">
+        <ol>
+          <li>Capillary walls are <strong>one cell thick</strong>, giving a short diffusion distance.</li>
+          <li>The lumen is narrow so red blood cells pass close to the wall.</li>
+          <li>They form extensive networks, giving a large surface area.</li>
+          <li>Blood flow is slower in capillaries, allowing more time for diffusion.</li>
+peter, [2/1/2026 8:45 PM]
+<h3>G) Exam Questions Bank</h3>
+      <ul>
+        <li><strong>1–2</strong>: Name organ producing bile; define assimilation.</li>
+        <li><strong>3</strong>: Describe peristalsis.</li>
+        <li><strong>4</strong>: Explain how bile helps fat digestion.</li>
+        <li><strong>6</strong>: Explain villi adaptations for absorption (SA, thin wall, blood supply, lacteal).</li>
+        <li><strong>Data</strong>: interpret enzyme graphs / label digestion organs / food label calculations.</li>
+      </ul>
+
+      <h3>H) How to Answer in the Exam (STRUCTURE)</h3>
+      <div id="ch4-tech"></div>
+
+      <h4>Worked 6-mark example</h4>
+      <p><strong>Question:</strong> Explain how the small intestine is adapted for absorption of digested food. (6)</p>
+      <div class="good">
+        <ol>
+          <li>The small intestine has many <strong>villi</strong> and microvilli, giving a <strong>large surface area</strong>.</li>
+          <li>The epithelium is <strong>one cell thick</strong>, giving a <strong>short diffusion distance</strong>.</li>
+          <li>Each villus has a <strong>rich capillary network</strong> that carries away glucose and amino acids.</li>
+          <li>This maintains a <strong>concentration gradient</strong> for diffusion into the blood.</li>
+          <li>Villi contain <strong>lacteals</strong> to absorb fatty acids and glycerol into the lymph.</li>
+          <li>Therefore these adaptations increase the <strong>rate of absorption</strong>.</li>
+        </ol>
+      </div>
+
+      <div class="bad">
+        <strong>Weak answer:</strong> “The intestine is long so it absorbs more.”<br/>
+        <strong>Upgrade:</strong> use the villi adaptation list and link each feature to diffusion/transport.
+      </div>
+
+      <a class="back" href="#top">Back to top</a>
+    </div>
+  </details>
+
+  <!-- ========================= -->
+  <!-- CHAPTER 5: RESPIRATION -->
+  <!-- ========================= -->
+  <details class="chapter" id="ch5">
+    <summary>5) Respiration: Energy release in cells <span class="tag">cell energy</span></summary>
+    <div class="content">
+      <h3>A) Key Points</h3>
+      <ul>
+        <li>Respiration is a chemical process that releases energy in cells.</li>
+        <li>Aerobic respiration uses oxygen and releases more energy than anaerobic respiration.</li>
+        <li>Anaerobic respiration in muscles produces lactic acid; causes fatigue; creates oxygen debt.</li>
+      </ul>
+
+      <h3>B) Definitions</h3>
+      <ul>
+        <li><strong>Respiration</strong>: chemical reactions in cells that break down glucose to release energy.</li>
+        <li><strong>Aerobic respiration</strong>: respiration using oxygen.</li>
+        <li><strong>Anaerobic respiration</strong>: respiration without oxygen.</li>
+        <li><strong>Oxygen debt</strong>: extra oxygen needed after exercise to oxidise lactic acid.</li>
+      </ul>
+
+      <h3>C) Core Understanding</h3>
+      <div class="callout">
+        <strong>Word equations (must know):</strong><br/>
+        Aerobic: <strong>glucose + oxygen → carbon dioxide + water (+ energy)</strong><br/>
+        Anaerobic (muscle): <strong>glucose → lactic acid (+ energy)</strong>
+      </div>
+      <ul>
+        <li>Energy is used for: muscle contraction, active transport, synthesis reactions, maintaining body temperature.</li>
+        <li>During intense exercise oxygen supply may be insufficient → anaerobic respiration increases → lactic acid builds up.</li>
+        <li>Oxygen debt is repaid by increased breathing and heart rate after exercise.</li>
+      </ul>
+
+      <h3>D) Structures & Functions</h3>
+      <ul>
+        <li><strong>Mitochondria</strong>: site of aerobic respiration; more mitochondria in active tissues (e.g., muscle).</li>
+      </ul>
+
+      <h3>E) Practical / Skills</h3>
+      <ul>
+        <li>Use pulse/breathing rate data to infer respiration demand during exercise.</li>
+        <li>Graph interpretation: recovery curves; compare rest vs exercise.</li>
+      </ul>
+
+peter, [2/1/2026 8:45 PM]
+<h3>F) Common Mistakes</h3>
+      <ul>
+        <li>Breathing ≠ respiration (breathing is ventilation; respiration is chemical reactions in cells).</li>
+        <li>Missing “energy released” when asked for respiration equation.</li>
+      </ul>
+
+      <h3>G) Exam Questions Bank</h3>
+      <ul>
+        <li><strong>1–2</strong>: State products of aerobic respiration; define oxygen debt.</li>
+        <li><strong>3</strong>: Explain why breathing rate increases during exercise.</li>
+        <li><strong>4</strong>: Compare aerobic and anaerobic respiration.</li>
+        <li><strong>6</strong>: Explain oxygen debt and recovery after vigorous exercise.</li>
+      </ul>
+
+      <h3>H) How to Answer in the Exam (STRUCTURE)</h3>
+      <div id="ch5-tech"></div>
+
+      <h4>Worked 6-mark example</h4>
+      <p><strong>Question:</strong> Explain what is meant by oxygen debt and how it is repaid. (6)</p>
+      <div class="good">
+        <ol>
+          <li>During vigorous exercise, muscles may not get enough oxygen for aerobic respiration.</li>
+          <li>Some energy is released by <strong>anaerobic respiration</strong>.</li>
+          <li>Anaerobic respiration produces <strong>lactic acid</strong> in muscles.</li>
+          <li>Oxygen debt is the <strong>extra oxygen</strong> needed after exercise to <strong>oxidise lactic acid</strong>.</li>
+          <li>Breathing and heart rate remain high to deliver more oxygen and remove carbon dioxide.</li>
+          <li>As lactic acid is broken down, oxygen debt is repaid and rates return to normal.</li>
+        </ol>
+      </div>
+
+      <div class="bad">
+        <strong>Weak answer:</strong> “Oxygen debt is when you need more oxygen after running.”<br/>
+        <strong>Upgrade:</strong> add anaerobic respiration → lactic acid → oxidised using extra oxygen.
+      </div>
+
+      <a class="back" href="#top">Back to top</a>
+    </div>
+  </details>
+
+  <!-- ========================= -->
+  <!-- CHAPTER 6: GAS EXCHANGE -->
+  <!-- ========================= -->
+  <details class="chapter" id="ch6">
+    <summary>6) Gas Exchange: Breathing mechanisms <span class="tag">lungs</span></summary>
+    <div class="content">
+      <h3>A) Key Points</h3>
+      <ul>
+        <li>Gas exchange occurs in the alveoli by diffusion.</li>
+        <li>Efficient exchange requires large surface area, short diffusion distance, steep gradients.</li>
+        <li>Ventilation changes thorax volume and pressure to move air in/out of lungs.</li>
+      </ul>
+
+      <h3>B) Definitions</h3>
+      <ul>
+        <li><strong>Ventilation</strong>: movement of air into and out of lungs.</li>
+        <li><strong>Alveolus</strong>: air sac where gas exchange occurs.</li>
+        <li><strong>Diffusion</strong>: net movement from high to low concentration.</li>
+      </ul>
+
+      <h3>C) Core Understanding</h3>
+      <ul>
+        <li>Oxygen diffuses from alveoli (higher concentration) to blood (lower concentration).</li>
+        <li>Carbon dioxide diffuses from blood (higher concentration) to alveoli (lower concentration).</li>
+        <li>Ventilation and blood flow maintain steep concentration gradients.</li>
+      </ul>
+
+      <h3>D) Organ Structures & Functions (Lungs)</h3>
+      <div class="callout">
+        <strong>Lung structure (label + function):</strong>
+        <ul>
+          <li><strong>Trachea</strong>: cartilage rings keep airway open; cilia + mucus trap and remove dust/pathogens.</li>
+          <li><strong>Bronchi</strong>: carry air into each lung.</li>
+          <li><strong>Bronchioles</strong>: smaller tubes leading to alveoli.</li>
+          <li><strong>Alveoli</strong>: gas exchange surface.</li>
+          <li><strong>Capillaries</strong>: bring deoxygenated blood; carry away oxygenated blood.</li>
+        </ul>
+      </div>
+
+      <div class="good">
+
+peter, [2/1/2026 8:45 PM]
+<strong>Alveoli adaptations (feature → benefit):</strong>
+        <ul>
+          <li>Many alveoli → <strong>large surface area</strong>.</li>
+          <li>Alveolar/capillary walls one cell thick → <strong>short diffusion distance</strong>.</li>
+          <li>Moist lining → gases dissolve before diffusing.</li>
+          <li>Dense capillary network → maintains gradient by removing O₂ and delivering CO₂.</li>
+          <li>Ventilation replaces alveolar air → maintains gradient.</li>
+        </ul>
+      </div>
+
+      <h4>Ventilation basics</h4>
+      <table>
+        <tr><th>Step</th><th>Inhalation</th><th>Exhalation</th></tr>
+        <tr><td>Diaphragm</td><td>Contracts and flattens</td><td>Relaxes and domes</td></tr>
+        <tr><td>Intercostal muscles</td><td>External contract → ribs up/out</td><td>External relax (internal contract in forced exhale)</td></tr>
+        <tr><td>Thorax volume</td><td>Increases</td><td>Decreases</td></tr>
+        <tr><td>Pressure</td><td>Decreases below atmospheric</td><td>Increases above atmospheric</td></tr>
+        <tr><td>Air movement</td><td>Air enters lungs</td><td>Air leaves lungs</td></tr>
+      </table>
+
+      <h3>E) Practical / Skills</h3>
+      <ul>
+        <li>Interpret breathing/pulse data; explain changes during exercise.</li>
+        <li>Health: smoking damages cilia and can damage alveoli; reduces gas exchange efficiency.</li>
+      </ul>
+
+      <h3>F) Common Mistakes</h3>
+      <ul>
+        <li>“Oxygen is pumped into blood” → oxygen <strong>diffuses</strong> down a gradient.</li>
+        <li>Missing pressure change explanation in ventilation questions.</li>
+      </ul>
+
+      <h3>G) Exam Questions Bank</h3>
+      <ul>
+        <li><strong>1–2</strong>: Name gas exchange surface; state two alveoli adaptations.</li>
+        <li><strong>3</strong>: Describe inhalation in terms of muscles, volume, pressure.</li>
+        <li><strong>4</strong>: Explain how blood supply helps maintain diffusion gradients.</li>
+        <li><strong>6</strong>: Explain how smoking reduces gas exchange (cilia, mucus, alveoli damage, gradients).</li>
+      </ul>
+
+      <h3>H) How to Answer in the Exam (STRUCTURE)</h3>
+      <div id="ch6-tech"></div>
+
+      <h4>Worked 6-mark example</h4>
+      <p><strong>Question:</strong> Explain how alveoli are adapted for efficient gas exchange. (6)</p>
+      <div class="good">
+        <ol>
+          <li>There are many alveoli, giving a large surface area for diffusion.</li>
+          <li>Alveolar and capillary walls are one cell thick, giving a short diffusion distance.</li>
+          <li>The surface is moist so gases dissolve before diffusing.</li>
+          <li>A dense capillary network provides a good blood supply.</li>
+          <li>Blood flow removes oxygen and delivers carbon dioxide, maintaining a steep concentration gradient.</li>
+          <li>Ventilation replaces alveolar air, also maintaining the gradient, so diffusion is rapid.</li>
+        </ol>
+      </div>
+
+      <div class="bad">
+        <strong>Weak answer:</strong> “Alveoli are small so gases move fast.”<br/>
+        <strong>Upgrade:</strong> list adaptations with diffusion links (SA, thin wall, blood supply, ventilation).
+      </div>
+
+      <a class="back" href="#top">Back to top</a>
+    </div>
+  </details>
+
+  <!-- ========================= -->
+  <!-- CHAPTER 7: INTERNAL TRANSPORT -->
+  <!-- ========================= -->
+  <details class="chapter" id="ch7">
+    <summary>7) Internal Transport: Circulatory system <span class="tag">heart + blood</span></summary>
+    <div class="content">
+      <h3>A) Key Points</h3>
+      <ul>
+        <li>Humans have <strong>double circulation</strong>: pulmonary + systemic.</li>
+        <li>Heart is a pump; valves prevent backflow.</li>
+        <li>Blood transports oxygen, nutrients, hormones; removes CO₂ and urea; distributes heat.</li>
+      </ul>
+
+peter, [2/1/2026 8:45 PM]
+<h3>B) Definitions</h3>
+      <ul>
+        <li><strong>Double circulation</strong>: blood passes through the heart twice per complete circuit.</li>
+        <li><strong>Artery</strong>: carries blood away from the heart (high pressure).</li>
+        <li><strong>Vein</strong>: carries blood toward the heart; has valves.</li>
+        <li><strong>Capillary</strong>: exchange vessel with one-cell-thick walls.</li>
+      </ul>
+
+      <h3>C) Core Understanding</h3>
+      <ul>
+        <li><strong>Pulmonary circulation</strong>: right ventricle → pulmonary artery → lungs → pulmonary vein → left atrium.</li>
+        <li><strong>Systemic circulation</strong>: left ventricle → aorta → body → vena cava → right atrium.</li>
+        <li>Capillaries allow exchange by diffusion with body cells.</li>
+      </ul>
+
+      <h3>D) Organ Structures & Functions (Heart + Blood)</h3>
+      <div class="callout">
+        <strong>Heart chambers + major vessels:</strong>
+        <ul>
+          <li><strong>Right atrium</strong> receives deoxygenated blood from <strong>vena cava</strong>.</li>
+          <li><strong>Right ventricle</strong> pumps blood to lungs via <strong>pulmonary artery</strong>.</li>
+          <li><strong>Left atrium</strong> receives oxygenated blood from <strong>pulmonary vein</strong>.</li>
+          <li><strong>Left ventricle</strong> pumps blood to body via <strong>aorta</strong> (thick wall for high pressure).</li>
+          <li><strong>Valves</strong> prevent backflow (one-way flow).</li>
+          <li><strong>Coronary arteries</strong> supply heart muscle with oxygen and glucose.</li>
+        </ul>
+      </div>
+
+      <table>
+        <tr><th>Vessel</th><th>Structure</th><th>Function link</th></tr>
+        <tr><td>Artery</td><td>Thick muscular wall; small lumen</td><td>Withstands high pressure; maintains flow</td></tr>
+        <tr><td>Vein</td><td>Thin wall; large lumen; valves</td><td>Returns blood at low pressure; valves prevent backflow</td></tr>
+        <tr><td>Capillary</td><td>One-cell-thick wall; narrow lumen</td><td>Short diffusion distance; exchange with tissues</td></tr>
+      </table>
+
+      <div class="good">
+        <strong>Blood components:</strong>
+        <ul>
+          <li><strong>Plasma</strong>: transports dissolved substances (CO₂, urea, glucose, hormones, amino acids).</li>
+          <li><strong>Red blood cells</strong>: haemoglobin transports oxygen.</li>
+          <li><strong>White blood cells</strong>: defend against pathogens (phagocytosis/antibodies if required).</li>
+          <li><strong>Platelets</strong>: clotting; prevents blood loss; stops entry of pathogens.</li>
+        </ul>
+      </div>
+
+      <h3>E) Practical / Skills</h3>
+      <ul>
+        <li>Measure pulse and recovery after exercise; calculate % increase; interpret graphs.</li>
+        <li>Evaluate risk factors for coronary heart disease (smoking, diet, exercise, obesity).</li>
+      </ul>
+
+      <h3>F) Common Mistakes</h3>
+      <ul>
+        <li>Pulmonary vein carries <strong>oxygenated</strong> blood (common trap).</li>
+        <li>Not stating valves prevent backflow (must include for marks).</li>
+      </ul>
+
+      <h3>G) Exam Questions Bank</h3>
+      <ul>
+        <li><strong>1–2</strong>: Name vessel leaving left ventricle; state function of platelets.</li>
+        <li><strong>3</strong>: Describe pathway of blood from vena cava to aorta.</li>
+        <li><strong>4</strong>: Explain why left ventricle wall is thicker than right ventricle wall.</li>
+        <li><strong>6</strong>: Explain how capillary structure makes exchange efficient.</li>
+      </ul>
+
+      <h3>H) How to Answer in the Exam (STRUCTURE)</h3>
+      <div id="ch7-tech"></div>
+
+      <h4>Worked 6-mark example</h4>
+      <p><strong>Question:</strong> Explain why capillaries are efficient exchange vessels. (6)</p>
+
+peter, [2/1/2026 8:45 PM]
+<div class="good">
+        <ol>
+          <li>Capillary walls are <strong>one cell thick</strong>, giving a short diffusion distance.</li>
+          <li>The lumen is narrow so red blood cells pass close to the wall.</li>
+          <li>They form extensive networks, giving a large surface area.</li>
+          <li>Blood flow is slower in capillaries, allowing more time for diffusion.</li>
+          <li>Oxygen an
+
+
+<li>Oxygen and glucose diffuse to cells, while carbon dioxide diffuses into blood down gradients.</li>
+          <li>Therefore exchange of substances is rapid and efficient.</li>
+        </ol>
+      </div>
+
+      <div class="bad">
+        <strong>Weak answer:</strong> “Capillaries are small.”<br/>
+        <strong>Upgrade:</strong> add thin wall + narrow lumen + SA + slower flow + diffusion gradients.
+      </div>
+
+      <a class="back" href="#top">Back to top</a>
+    </div>
+  </details>
+
+  <!-- ========================= -->
+  <!-- CHAPTER 8: BONES, MUSCLES & JOINTS -->
+  <!-- ========================= -->
+  <details class="chapter" id="ch8">
+    <summary>8) Bones, Muscles and Joints: Skeletal system <span class="tag">movement</span></summary>
+    <div class="content">
+      <h3>A) Key Points</h3>
+      <ul>
+        <li>Skeleton: support, protection, movement, shape (and blood cell production if in your course).</li>
+        <li>Joints allow movement; synovial joints reduce friction.</li>
+        <li>Muscles work in antagonistic pairs; muscles pull via tendons.</li>
+      </ul>
+
+      <h3>B) Definitions</h3>
+      <ul>
+        <li><strong>Tendon</strong>: connects muscle to bone.</li>
+        <li><strong>Ligament</strong>: connects bone to bone; stabilises joint.</li>
+        <li><strong>Antagonistic pair</strong>: two muscles working opposite ways at a joint.</li>
+        <li><strong>Synovial joint</strong>: joint with synovial fluid and cartilage for smooth movement.</li>
+      </ul>
+
+      <h3>C) Core Understanding</h3>
+      <ul>
+        <li>Muscles contract (shorten) to pull bones; they cannot push.</li>
+        <li>To bend elbow: biceps contracts; triceps relaxes. To straighten: triceps contracts; biceps relaxes.</li>
+      </ul>
+
+      <h3>D) Structures & Functions</h3>
+      <div class="callout">
+        <strong>Synovial joint parts:</strong>
+        <ul>
+          <li><strong>Cartilage</strong>: reduces friction; absorbs shock.</li>
+          <li><strong>Synovial fluid</strong>: lubricates; reduces friction.</li>
+          <li><strong>Ligaments</strong>: stabilise joint; prevent dislocation.</li>
+          <li><strong>Tendons</strong>: transmit force from muscle to bone.</li>
+        </ul>
+      </div>
+
+      <div class="good">
+        <strong>Elbow antagonistic pair (keywords):</strong>
+        <ul>
+          <li>Bending: biceps <strong>contracts</strong>, triceps <strong>relaxes</strong>.</li>
+          <li>Straightening: triceps <strong>contracts</strong>, biceps <strong>relaxes</strong>.</li>
+        </ul>
+      </div>
+
+      <h3>E) Practical / Skills</h3>
+      <ul>
+        <li>Interpret joint diagrams; label structures and link to function.</li>
+        <li>Evaluate injury prevention: warm-up, flexibility, correct posture (as commonly assessed).</li>
+      </ul>
+
+      <h3>F) Common Mistakes</h3>
+      <ul>
+        <li>Ligament vs tendon confusion (bone-bone vs muscle-bone).</li>
+        <li>Not using “contracts/relaxes” (these words score marks).</li>
+      </ul>
+
+      <h3>G) Exam Questions Bank</h3>
+      <ul>
+        <li><strong>1–2</strong>: Define tendon; state function of cartilage.</li>
+        <li><strong>3</strong>: Describe how synovial fluid helps movement.</li>
+        <li><strong>4</strong>: Explain how antagonistic muscles move the forearm.</li>
+        <li><strong>6</strong>: Explain how joint structures reduce damage during movement (shock + friction + stability).</li>
+      </ul>
+
+      <h3>H) How to Answer in the Exam (STRUCTURE)</h3>
+      <div id="ch8-tech"></div>
+
+      <h4>Worked 6-mark example</h4>
+      <p><strong>Question:</strong> Explain how the forearm is raised and lowered at the elbow joint. (6)</p>
+      <div class="good">
+        <ol>
+          <li>The elbow is a hinge joint moved by an antagonistic pair.</li>
+
+<li>To raise the forearm, the <strong>biceps contracts</strong> and the <strong>triceps relaxes</strong>.</li>
+          <li>The biceps pulls on a <strong>tendon</strong> which pulls the forearm bones.</li>
+          <li>This causes the forearm to pivot at the elbow, bending the arm.</li>
+          <li>To lower the forearm, the <strong>triceps contracts</strong> and the <strong>biceps relaxes</strong>.</li>
+          <li>The triceps pulls through its tendon, straightening the arm.</li>
+        </ol>
+      </div>
+
+      <div class="bad">
+        <strong>Weak answer:</strong> “Biceps lifts it; triceps lowers it.”<br/>
+        <strong>Upgrade:</strong> add contracts/relaxes + tendon pulls + pivot at joint.
+      </div>
+
+      <a class="back" href="#top">Back to top</a>
+    </div>
+  </details>
+
+  <!-- ========================= -->
+  <!-- CHAPTER 9: COORDINATION -->
+  <!-- ========================= -->
+  <details class="chapter" id="ch9">
+    <summary>9) Coordination: Nervous system and sensory receptors <span class="tag">reflexes</span></summary>
+    <div class="content">
+      <h3>A) Key Points</h3>
+      <ul>
+        <li>Nervous system coordinates responses using electrical impulses.</li>
+        <li>Reflexes are rapid, automatic actions that protect the body.</li>
+        <li>Receptors detect stimuli; effectors (muscles/glands) produce responses.</li>
+      </ul>
+
+      <h3>B) Definitions</h3>
+      <ul>
+        <li><strong>Stimulus</strong>: change in environment detected by a receptor.</li>
+        <li><strong>Receptor</strong>: cell/organ that detects a stimulus.</li>
+        <li><strong>Effector</strong>: muscle or gland that brings about a response.</li>
+        <li><strong>Reflex arc</strong>: pathway taken by impulses in a reflex action.</li>
+      </ul>
+
+      <h3>C) Core Understanding</h3>
+      <ul>
+        <li>Reflex pathway: <strong>stimulus → receptor → sensory neurone → relay neurone (CNS) → motor neurone → effector → response</strong>.</li>
+        <li>Reflexes bypass conscious control for speed; reduce injury.</li>
+      </ul>
+
+      <h3>D) Structures & Functions</h3>
+      <div class="callout">
+        <strong>Neurone parts:</strong>
+        <ul>
+          <li><strong>Dendrites</strong>: receive impulses from other neurones.</li>
+          <li><strong>Cell body</strong>: contains nucleus; controls cell.</li>
+          <li><strong>Axon</strong>: carries impulse.</li>
+          <li><strong>Myelin sheath</strong>: insulation; speeds impulse transmission.</li>
+          <li><strong>Synapse</strong> (if included): neurotransmitter transmits impulse one-way.</li>
+        </ul>
+      </div>
+
+      <h3>E) Practical / Skills</h3>
+      <ul>
+        <li>Reaction time investigations: repeats + averages; control variables; identify sources of error (practice effect, inconsistent start).</li>
+      </ul>
+
+      <h3>F) Common Mistakes</h3>
+      <ul>
+        <li>Calling receptors “effectors” (receptor detects; effector acts).</li>
+        <li>Missing CNS/relay neurone in the reflex arc sequence when required.</li>
+      </ul>
+
+      <h3>G) Exam Questions Bank</h3>
+      <ul>
+        <li><strong>1–2</strong>: Define receptor; name an effector.</li>
+        <li><strong>3</strong>: Describe reflex arc pathway.</li>
+        <li><strong>4</strong>: Explain why reflexes are important.</li>
+        <li><strong>6</strong>: Explain a withdrawal reflex from a hot object using correct pathway terms.</li>
+      </ul>
+
+      <h3>H) How to Answer in the Exam (STRUCTURE)</h3>
+      <div id="ch9-tech"></div>
+
+      <h4>Worked 6-mark example</h4>
+      <p><strong>Question:</strong> Explain how a reflex action occurs when a person touches a hot object. (6)</p>
+      <div class="good">
+        <ol>
+          <li>Heat is the <strong>stimulus</strong> detected by <strong>receptors</strong> in the skin.</li>
+
+
+<li>An impulse travels along a <strong>sensory neurone</strong> to the <strong>spinal cord</strong>.</li>
+          <li>The impulse passes through a <strong>relay neurone</strong> in the CNS.</li>
+          <li>It then travels along a <strong>motor neurone</strong> to an <strong>effector</strong> muscle.</li>
+          <li>The muscle contracts and pulls the hand away (response).</li>
+          <li>This is rapid and automatic, reducing tissue damage.</li>
+        </ol>
+      </div>
+
+      <div class="bad">
+        <strong>Weak answer:</strong> “The brain tells the hand to move.”<br/>
+        <strong>Upgrade:</strong> include sensory → spinal cord/relay → motor → effector sequence.
+      </div>
+
+      <a class="back" href="#top">Back to top</a>
+    </div>
+  </details>
+
+  <!-- ========================= -->
+  <!-- CHAPTER 10: HOMEOSTASIS & EXCRETION -->
+  <!-- ========================= -->
+  <details class="chapter" id="ch10">
+    <summary>10) Homeostasis and Excretion: Maintaining balance <span class="tag">kidneys</span></summary>
+    <div class="content">
+      <h3>A) Key Points</h3>
+      <ul>
+        <li>Homeostasis maintains a stable internal environment (water balance, blood glucose, temperature).</li>
+        <li>Excretion removes metabolic wastes: CO₂, urea, excess water and salts.</li>
+        <li>Kidney: ultrafiltration + selective reabsorption + water balance (ADH).</li>
+      </ul>
+
+      <h3>B) Definitions</h3>
+      <ul>
+        <li><strong>Homeostasis</strong>: maintenance of a constant internal environment.</li>
+        <li><strong>Excretion</strong>: removal of metabolic waste products from the body.</li>
+        <li><strong>Ultrafiltration</strong>: pressure filtration at glomerulus into Bowman’s capsule.</li>
+        <li><strong>Selective reabsorption</strong>: reabsorption of useful substances into blood.</li>
+        <li><strong>ADH</strong>: hormone that increases water reabsorption in collecting ducts.</li>
+        <li><strong>Negative feedback</strong>: response reverses a change to restore normal conditions.</li>
+      </ul>
+
+      <h3>C) Core Understanding</h3>
+      <ul>
+        <li>Excess amino acids are deaminated in liver → ammonia → converted to urea.</li>
+        <li>Urea is transported in blood to kidneys and excreted in urine.</li>
+        <li>Water balance controlled by ADH depending on hydration state.</li>
+      </ul>
+
+      <h3>D) Organ Structures & Functions (Kidneys)</h3>
+      <div class="callout">
+        <strong>Kidney gross structure:</strong>
+        <ul>
+          <li><strong>Renal artery</strong>: brings blood to kidney.</li>
+          <li><strong>Renal vein</strong>: carries filtered blood away.</li>
+          <li><strong>Cortex</strong>: contains glomeruli, Bowman’s capsules, PCT/DCT.</li>
+          <li><strong>Medulla</strong>: contains loops of Henle and collecting ducts.</li>
+          <li><strong>Ureter</strong>: carries urine to bladder.</li>
+        </ul>
+      </div>
+
+      <div class="good">
+        <strong>Nephron parts (label + function):</strong>
+        <ul>
+          <li><strong>Glomerulus</strong>: high pressure → ultrafiltration of small molecules.</li>
+          <li><strong>Bowman’s capsule</strong>: collects filtrate.</li>
+          <li><strong>PCT</strong>: reabsorbs all glucose, most amino acids, ions; water follows.</li>
+          <li><strong>Loop of Henle</strong>: establishes medulla gradient for water conservation.</li>
+          <li><strong>DCT</strong>: further adjustment of ions/water.</li>
+          <li><strong>Collecting duct</strong>: water reabsorption controlled by ADH; sets urine concentration.</li>
+        </ul>
+      </div>
+
+      <h4>Ultrafiltration + selective reabsorption (step chain)</h4>
+      <ul>
+        <li>High pressure in glomerulus forces water + small solutes into Bowman’s capsule.</li>
+
+
+<li>Proteins and blood cells remain in blood (too large to pass filter).</li>
+        <li>Useful substances are reabsorbed into capillaries (often by active transport).</li>
+        <li>Amount of water reabsorbed varies based on ADH.</li>
+      </ul>
+
+      <h4>ADH control of water balance (negative feedback)</h4>
+      <ul>
+        <li>Dehydration → blood more concentrated → pituitary releases more ADH.</li>
+        <li>ADH increases collecting duct permeability → more water reabsorbed.</li>
+        <li>Urine becomes more concentrated; blood water content returns to normal → ADH decreases.</li>
+      </ul>
+
+      <h3>E) Practical / Skills</h3>
+      <ul>
+        <li>Interpret urine/blood data (glucose/protein/water) and link to kidney function.</li>
+        <li>Graph analysis: ADH levels vs urine concentration; describe trends using negative feedback.</li>
+      </ul>
+
+      <h3>F) Common Mistakes</h3>
+      <ul>
+        <li>Filtration is at <strong>glomerulus/Bowman’s capsule</strong>, not PCT.</li>
+        <li>Glucose is normally absent from urine because it is reabsorbed in PCT.</li>
+      </ul>
+
+      <h3>G) Exam Questions Bank</h3>
+      <ul>
+        <li><strong>1–2</strong>: Define excretion; name where ultrafiltration occurs.</li>
+        <li><strong>3</strong>: Describe what is filtered at the glomerulus.</li>
+        <li><strong>4</strong>: Explain why glucose is not present in urine in a healthy person.</li>
+        <li><strong>6</strong>: Explain ADH control of water balance using negative feedback.</li>
+      </ul>
+
+      <h3>H) How to Answer in the Exam (STRUCTURE)</h3>
+      <div id="ch10-tech"></div>
+
+      <h4>Worked 6-mark example</h4>
+      <p><strong>Question:</strong> Explain how ADH controls water balance. (6)</p>
+      <div class="good">
+        <ol>
+          <li>If blood water content is low, the person is dehydrated and blood is more concentrated.</li>
+          <li>The pituitary gland releases more <strong>ADH</strong>.</li>
+          <li>ADH increases the permeability of the <strong>collecting ducts</strong>.</li>
+          <li>More water is reabsorbed from filtrate into the blood.</li>
+          <li>A smaller volume of concentrated urine is produced.</li>
+          <li>As blood water content returns to normal, less ADH is released (negative feedback).</li>
+        </ol>
+      </div>
+
+      <div class="bad">
+        <strong>Weak answer:</strong> “ADH makes you pee less.”<br/>
+        <strong>Upgrade:</strong> include pituitary + collecting ducts permeability + negative feedback chain.
+      </div>
+
+      <a class="back" href="#top">Back to top</a>
+    </div>
+  </details>
+
+</details>
+
+  <!-- ========================= -->
+  <!-- CHAPTER 11: REPRODUCTION & HEREDITY -->
+  <!-- ========================= -->
+  <details class="chapter" id="ch11">
+    <summary>11) Reproduction and Heredity: Human reproduction and genetics <span class="tag">genetics</span></summary>
+    <div class="content">
+      <h3>A) Key Points</h3>
+      <ul>
+        <li>Reproductive systems produce gametes; fertilisation forms a zygote; development occurs in uterus.</li>
+        <li>Menstrual cycle involves ovulation and uterine lining changes controlled by hormones.</li>
+        <li>Heredity: DNA, genes, chromosomes; alleles; dominant/recessive; Punnett squares; variation and mutation.</li>
+      </ul>
+
+      <h3>B) Definitions</h3>
+      <ul>
+        <li><strong>Gamete</strong>: sex cell with half the normal chromosome number.</li>
+        <li><strong>Fertilisation</strong>: fusion of nuclei of gametes to form a zygote.</li>
+        <li><strong>Implantation</strong>: embryo attaches to uterus lining.</li>
+        <li><strong>DNA</strong>: molecule carrying genetic information.</li>
+        <li><strong>Gene</strong>: section of DNA that codes for a protein/characteristic.</li>
+        <li><strong>Allele</strong>: different form of a gene.</li>
+        <li><strong>Genotype</strong>: alleles present.</li>
+        <li><strong>Phenotype</strong>: expressed characteristics.</li>
+        <li><strong>Mutation</strong>: random change in DNA that may create a new allele.</li>
+      </ul>
+
+      <h3>C) Core Understanding</h3>
+      <ul>
+        <li>Male: testes produce sperm; sperm duct carries sperm; glands add fluid to semen.</li>
+        <li>Female: ovaries release eggs; oviduct is usual site of fertilisation; uterus supports pregnancy.</li>
+        <li>Menstrual cycle basics: lining thickens; ovulation mid-cycle; if no pregnancy, lining sheds.</li>
+        <li>Inheritance: use Punnett squares to predict genotype and phenotype ratios.</li>
+        <li>Variation: genetic (alleles) + environmental (diet, exercise). Mutation increases genetic variation.</li>
+      </ul>
+
+      <h3>D) Organ Structures & Functions</h3>
+      <div class="callout">
+        <strong>Male reproductive system:</strong>
+        <ul>
+          <li><strong>Testes</strong>: sperm production; testosterone.</li>
+          <li><strong>Sperm duct</strong>: transports sperm.</li>
+          <li><strong>Prostate/seminal vesicles</strong>: add fluid (nutrients; transport medium).</li>
+          <li><strong>Penis/urethra</strong>: delivers semen.</li>
+        </ul>
+      </div>
+
+      <div class="callout">
+        <strong>Female reproductive system:</strong>
+        <ul>
+          <li><strong>Ovaries</strong>: produce eggs; hormones.</li>
+          <li><strong>Oviduct</strong>: site of fertilisation; transports egg.</li>
+          <li><strong>Uterus</strong>: thick lining for implantation; supports embryo.</li>
+          <li><strong>Cervix</strong>: ring of muscle at entrance of uterus.</li>
+          <li><strong>Vagina</strong>: birth canal; receives sperm.</li>
+        </ul>
+      </div>
+
+      <div class="good">
+        <strong>Menstrual cycle (key hormone links):</strong>
+        <ul>
+          <li><strong>FSH</strong>: stimulates follicle development; follicles produce oestrogen.</li>
+          <li><strong>Oestrogen</strong>: rebuilds lining; inhibits FSH; stimulates LH surge.</li>
+          <li><strong>LH</strong>: triggers <strong>ovulation</strong> and corpus luteum formation.</li>
+          <li><strong>Progesterone</strong>: maintains uterine lining; inhibits FSH/LH; drop causes menstruation.</li>
+        </ul>
+      </div>
+
+      <h4>Punnett square method (exam steps)</h4>
+      <ol>
+        <li>State which allele is dominant/recessive and what each letter means.</li>
+        <li>Write parental genotypes.</li>
+        <li>Write gametes each parent can produce.</li>
+        <li>Fill Punnett square.</li>
+        <li>State genotype ratio and phenotype ratio (and % if asked).</li>
+      </ol>
+
+
+<h3>E) Practical / Skills</h3>
+      <ul>
+        <li>Genetics data: calculate probabilities; interpret offspring ratios; link to dominance.</li>
+        <li>Evaluate contraception (if in your course): effectiveness, STI protection, side effects, reliability.</li>
+      </ul>
+
+      <h3>F) Common Mistakes</h3>
+      <ul>
+        <li>Dominant does not mean “stronger/better” — it means expressed in heterozygote.</li>
+        <li>Genotype vs phenotype confusion — genotype = alleles; phenotype = expressed trait.</li>
+        <li>For menstrual cycle, forgetting “LH triggers ovulation” loses marks.</li>
+      </ul>
+
+      <h3>G) Exam Questions Bank</h3>
+      <ul>
+        <li><strong>1–2</strong>: Define fertilisation; define allele.</li>
+        <li><strong>3</strong>: Describe role of progesterone in cycle.</li>
+        <li><strong>4</strong>: Explain how hormones control ovulation.</li>
+        <li><strong>6</strong>: Use Punnett square to predict offspring ratios and explain.</li>
+        <li><strong>Data</strong>: interpret hormone-level graphs; calculate phenotype %.</li>
+      </ul>
+
+      <h3>H) How to Answer in the Exam (STRUCTURE)</h3>
+      <div id="ch11-tech"></div>
+
+      <h4>Worked 6-mark example</h4>
+      <p><strong>Question:</strong> Two heterozygous parents (Tt × Tt) for a trait where T is dominant. Predict offspring phenotypes. (6)</p>
+      <div class="good">
+        <ol>
+          <li>Let T = dominant phenotype and t = recessive phenotype.</li>
+          <li>Parents are heterozygous: <strong>Tt × Tt</strong>.</li>
+          <li>Gametes from each parent: <strong>T</strong> and <strong>t</strong>.</li>
+          <li>Punnett outcomes: <strong>TT, Tt, Tt, tt</strong>.</li>
+          <li>Genotype ratio: 1 TT : 2 Tt : 1 tt.</li>
+          <li>Phenotype ratio: <strong>3 dominant : 1 recessive</strong> (75% : 25%).</li>
+        </ol>
+      </div>
+
+      <div class="bad">
+        <strong>Weak answer:</strong> “Most will be dominant.”<br/>
+        <strong>Upgrade:</strong> show Punnett + give ratios and % with correct genotype/phenotype language.
+      </div>
+
+      <a class="back" href="#top">Back to top</a>
+    </div>
+  </details>
+
+  <!-- ========================= -->
+  <!-- CHAPTER 12: HUMAN INFLUENCE -->
+  <!-- ========================= -->
+  <details class="chapter" id="ch12">
+    <summary>12) Human Influence on the Environment: Ecology and impact <span class="tag">ecology</span></summary>
+    <div class="content">
+      <h3>A) Key Points</h3>
+      <ul>
+        <li>Ecosystems include interactions between organisms and their environment.</li>
+        <li>Humans reduce biodiversity through habitat destruction, pollution, overexploitation and climate change.</li>
+        <li>Conservation strategies aim to maintain biodiversity and ecosystem stability.</li>
+      </ul>
+
+      <h3>B) Definitions</h3>
+      <ul>
+        <li><strong>Ecosystem</strong>: interaction of a community with its physical environment.</li>
+        <li><strong>Population</strong>: organisms of one species in a habitat.</li>
+        <li><strong>Community</strong>: all populations of different species in an area.</li>
+        <li><strong>Biodiversity</strong>: variety of different species in an ecosystem.</li>
+        <li><strong>Conservation</strong>: protecting species and habitats to maintain biodiversity.</li>
+      </ul>
+
+      <h3>C) Core Understanding</h3>
+      <ul>
+        <li><strong>Food chains/webs</strong>: energy flows from producers to consumers; energy is lost at each transfer (movement, heat, waste).</li>
+        <li><strong>Nutrient cycles</strong> (where included): carbon cycling via photosynthesis/respiration/combustion; deforestation reduces CO₂ uptake.</li>
+        <li><strong>Human impacts:</strong>
+          <ul>
+            <li><strong>Deforestation</strong>: habitat loss; soil erosion; increased CO₂ due to less photosynthesis.</li>
+
+peter, [2/1/2026 8:49 PM]
+<li><strong>Pollution</strong>: harms organisms; can bioaccumulate/biomagnify (if used).</li>
+            <li><strong>Fertilisers</strong>: eutrophication chain (algae → plants die → decomposition uses O₂ → fish die).</li>
+            <li><strong>Greenhouse gases</strong>: enhanced greenhouse effect → global warming/climate change.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>D) Structures & Functions (where relevant)</h3>
+      <ul>
+        <li>Not organ-based: focus on ecological relationships, habitats, trophic levels, cycles.</li>
+      </ul>
+
+      <h3>E) Practical / Skills</h3>
+      <ul>
+        <li><strong>Sampling</strong> (if included): quadrats/transects; random sampling reduces bias; repeat for reliability.</li>
+        <li><strong>Data</strong>: calculate % change in species numbers; interpret population graphs; explain trends using abiotic factors.</li>
+        <li><strong>Conservation</strong>: protected areas, captive breeding, seed banks, sustainable farming/fishing, recycling.</li>
+      </ul>
+
+      <h3>F) Common Mistakes</h3>
+      <ul>
+        <li>Energy does not cycle; it <strong>flows</strong> and is lost as heat — nutrients cycle.</li>
+        <li>Greenhouse effect is natural; the problem is the <strong>enhanced</strong> greenhouse effect.</li>
+        <li>Not writing eutrophication as a chain loses marks.</li>
+      </ul>
+
+      <h3>G) Exam Questions Bank</h3>
+      <ul>
+        <li><strong>1–2</strong>: Define biodiversity; give one cause of habitat loss.</li>
+        <li><strong>3</strong>: Describe how a quadrat could be used to estimate distribution of a plant species.</li>
+        <li><strong>4</strong>: Explain how deforestation can increase atmospheric CO₂.</li>
+        <li><strong>6</strong>: Explain eutrophication and its effects on aquatic ecosystems.</li>
+        <li><strong>Data</strong>: interpret species richness graphs; evaluate conservation plans.</li>
+      </ul>
+
+      <h3>H) How to Answer in the Exam (STRUCTURE)</h3>
+      <div id="ch12-tech"></div>
+
+      <h4>Worked 6-mark example</h4>
+      <p><strong>Question:</strong> Explain how fertiliser run-off can lead to fish death in a lake. (6)</p>
+      <div class="good">
+        <ol>
+          <li>Fertilisers add nitrates and phosphates to the lake, increasing nutrient levels.</li>
+          <li>This causes rapid growth of algae (an algal bloom).</li>
+          <li>The bloom blocks light, so underwater plants photosynthesise less and may die.</li>
+          <li>Dead plants and algae are decomposed by microorganisms.</li>
+          <li>Decomposers respire aerobically and use up dissolved oxygen in the water.</li>
+          <li>Oxygen levels fall so fish cannot respire aerobically and many die (eutrophication).</li>
+        </ol>
+      </div>
+
+      <div class="bad">
+        <strong>Weak answer:</strong> “Fertiliser poisons fish.”<br/>
+        <strong>Upgrade:</strong> nutrient → algae bloom → decomposition → oxygen drop → fish die.
+      </div>
+
+      <a class="back" href="#top">Back to top</a>
+    </div>
+  </details>
+
+  <!-- ========================= -->
+  <!-- Inject the exam-tech template into each chapter -->
+  <!-- ========================= -->
+  <script>
+    function injectTech(id){
+      const t = document.getElementById('exam-tech-template');
+      const host = document.getElementById(id);
+      if(t && host){
+        host.appendChild(t.content.cloneNode(true));
+      }
+    }
+    ['ch1-tech','ch2-tech','ch3-tech','ch4-tech','ch5-tech','ch6-tech','ch7-tech','ch8-tech','ch9-tech','ch10-tech','ch11-tech','ch12-tech'].forEach(injectTech);
+
+    function expandAll(){
+      document.querySelectorAll('details.chapter').forEach(d => d.open = true);
+    }
+    function collapseAll(){
+      document.querySelectorAll('details.chapter').forEach(d => d.open = false);
+    }
+    function clearSearch(){
+      const s = document.getElementById('search');
+      s.value = '';
+      filterChapters('');
+      s.focus();
+    }
+    function openFromTOC(e,id){
+      // allow default hash navigation, but also auto-open the chapter
+      const el = document.getElementById(id);
+      if(el){ el.open = true; }
+      // smooth scroll (optional; keeps mobile nice)
+      setTimeout(()=>{ if(el) el.scrollIntoView({behavior:'smooth', block:'start'}); }, 0);
+    }
+
+    function filterChapters(q){
+      const query = (q||'').trim().toLowerCase();
+      document.querySelectorAll('details.chapter').forEach(ch => {
+        const text = ch.innerText.toLowerCase();
+        ch.style.display = text.includes(query) ? '' : 'none';
+      });
+    }
+    document.getElementById('search').addEventListener('input', e => filterChapters(e.target.value));
+
+    // Open chapter if user loads with a hash
+    window.addEventListener('load', ()=>{
+      const hash = (location.hash||'').replace('#','');
+      if(hash){
+        const el = document.getElementById(hash);
+        if(el && el.tagName.toLowerCase()==='details'){
+          el.open = true;
+          setTimeout(()=> el.scrollIntoView({behavior:'smooth', block:'start'}), 50);
+        }
+      }
+    });
+  </script>
+</main>
+</body>
+</html>
+by wupeteragg
+          
